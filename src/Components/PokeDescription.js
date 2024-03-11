@@ -11,9 +11,9 @@ export default function PokeDescription(props) {
   <div class="card-body">
     <h5 class="card-title">{props.name}</h5>
     <p class="card-text d-flex justify-content-start">
-        <div className='row'>
+        <div className='row '>
             {props.element.types.map((element)=>{
-            return( <div className="col md-3"><span>{element.type.name}</span></div>
+            return( <div className="col md-3 text-danger"><span>{element.type.name}</span></div>
             
             )
             
